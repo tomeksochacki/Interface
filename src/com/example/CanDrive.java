@@ -1,6 +1,6 @@
 package com.example;
 
-public interface CanDrive {
+public interface CanDrive extends CanFly, CanSwimm {
 
     public void start();
     public void stop();
@@ -8,6 +8,7 @@ public interface CanDrive {
     public void turnRight();
     public void accelerate();
     public void goConstantSpeed();
+    public int speedMax();
 
 
 }
